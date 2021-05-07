@@ -4,7 +4,13 @@ import Scroller from "./scroller";
 
 const getChild = (i) => {
   return (
-    <div key={i} style={{ height: "40px", border: "1px solid red" }}>
+    <div
+      key={i}
+      style={{
+        height: "42px",
+        border: "1px solid red"
+      }}
+    >
       {i}
     </div>
   );
@@ -12,6 +18,11 @@ const getChild = (i) => {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <Scroller itemsCount={2000} itemHeight={22} getAt={getChild} />,
+  <Scroller
+    viewHeight={400}
+    itemsCount={31}
+    itemHeight={44}
+    getAt={getChild}
+  />,
   rootElement
 );
