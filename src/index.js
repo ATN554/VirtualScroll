@@ -7,7 +7,7 @@ const getChild = (i) => {
     <div
       key={i}
       style={{
-        height: "42px",
+        height: "22px",
         border: "1px solid red"
       }}
     >
@@ -20,8 +20,8 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(
   <Scroller
     viewHeight={400}
-    itemsCount={31}
-    itemHeight={44}
+    itemsCount={61}
+    itemHeight={24}
     getAt={getChild}
   />,
   rootElement

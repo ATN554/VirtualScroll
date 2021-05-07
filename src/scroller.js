@@ -10,7 +10,7 @@ export default function Scroller(props) {
     () => Math.floor(viewHeight / itemHeight),
     [viewHeight, itemHeight]
   );
-  const renderCountDelta = 6; // invisible items count: half before top and half after bottom
+  const renderCountDelta = 16; // invisible items count: half before top and half after bottom
   const renderCount = React.useMemo(() => pageSize + renderCountDelta, [pageSize]);
   const bottomQuarter = React.useMemo(
     () => itemHeight * renderCountDelta * 0.25,
